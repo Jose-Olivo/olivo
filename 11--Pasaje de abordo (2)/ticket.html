@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket de Abordaje</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="Css/Lista.css">
+</head>
+<body>
+    <div class="ticket-container">
+        <div class="ticket">
+            <div class="ticket-main">
+                <div class="ticket-header">
+                    <i class="fas fa-plane" style="margin-right: 10px;"></i>
+                    <div class="company-name">PASE DE ABORDAR</div>
+                </div>
+                <div class="ticket-field">
+                    <div class="ticket-label">NOMBRE DEL PASAJERO</div>
+                    <div class="ticket-label">ORIGEN</div>
+                    <div class="ticket-label">DESTINO</div>
+                </div>
+                <div class="ticket-field">
+                    <input type="text" id="passengerName" placeholder="Nombre del pasajero" required>
+                    <select id="origin" required>
+                        <option value="">Selecciona un país</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="Perú">Perú</option>
+                        <option value="Bolivia">Bolivia</option>
+                        <option value="Costa Rica">Costa Rica</option>
+                        <option value="Honduras">Honduras</option>
+                        <option value="Republica Dominicana">Republica Dominicana</option>
+                        <option value="Haiti">Haiti</option>
+                        <option value="Chile">Chile</option>
+                        <option value="Argentina">Argentina</option>
+                    </select>
+                    <select id="destination" required>
+                        <option value="">Selecciona un país</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="Perú">Perú</option>
+                        <option value="Bolivia">Bolivia</option>
+                        <option value="Costa Rica">Costa Rica</option>
+                        <option value="Honduras">Honduras</option>
+                        <option value="Republica Dominicana">Republica Dominicana</option>
+                        <option value="Haiti">Haiti</option>
+                        <option value="Chile">Chile</option>
+                        <option value="Argentina">Argentina</option>
+                    </select>
+                </div>
+                <div class="ticket-field">
+                    <div class="ticket-label">VUELO</div>
+                    <div class="ticket-label">FECHA</div>
+                    <div class="ticket-label">ASIENTO</div>
+                </div>
+                <div class="ticket-field">
+                    <input type="text" id="flightNumber" value="VUELO-001" readonly>
+                    <input type="date" id="date" required>
+                    <input type="text" id="seat" value="E15" readonly>
+                </div>
+                <hr class="orange-line">
+                <div class="ticket-field">
+                    <div class="ticket-label">PUERTA</div>
+                    <div class="ticket-label">HORA DE ABORDAJE</div>
+                    <div class="ticket-label">HORA DE SALIDA</div>
+                </div>
+                <div class="ticket-field">
+                    <input type="text" id="gate" value="Z9" readonly>
+                    <input type="text" id="boardingTime" value="03:49" readonly>
+                    <input type="text" id="departureTime" value="04:00" readonly>
+                </div>
+                <div class="message">LA PUERTA SE CIERRA 15 MINUTOS ANTES DE LA SALIDA</div>
+            </div>
+
+            <div class="ticket-stub">
+                <div class="ticket-stub-header">PASE DE ABORDAR</div>
+                <div class="ticket-field">
+                    <div class="ticket-label">NOMBRE DEL PASAJERO</div>
+                    <div class="ticket-value" id="stubPassengerName"></div>
+                </div>
+                <hr class="white-line">
+                <div class="ticket-field">
+                    <div class="ticket-label">ORIGEN</div>
+                    <div class="ticket-value" id="stubOrigin"></div>
+                </div>
+                <div class="ticket-field">
+                    <div class="ticket-label">DESTINO</div>
+                    <div class="ticket-value" id="stubDestination"></div>
+                </div>
+                <div class="ticket-field">
+                    <div class="ticket-label">ASIENTO</div>
+                    <div class="ticket-value" id="stubSeat"></div>
+                </div>
+                <div class="ticket-field">
+                    <div class="ticket-label">FECHA</div>
+                    <div class="ticket-value" id="stubDate"></div>
+                </div>
+                <div class="ticket-field">
+                    <div class="ticket-label">PUERTA</div>
+                    <div class="ticket-value" id="stubGate"></div>
+                </div>
+                <div class="ticket-field">
+                    <div class="ticket-label">HORA DE ABORDAJE</div>
+                    <div class="ticket-value" id="stubBoardingTime"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="back-button" id="submitButton">Enviar</button>
+    <button class="back-button" id="clearButton">Limpiar</button>
+    <button class="back-button" onclick="window.location.href='lista.html'">Lista</button>
+    <a href="index1.html"><button class="back-button">VOLVER</button></a>
+
+    <script src="js/ticket.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

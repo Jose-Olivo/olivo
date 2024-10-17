@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px;
+    background-color: #e6e6e6;
+}
+
+.ticket-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.ticket {
+    display: flex;
+    border: 1px solid #ddd;
+    position: relative;
+}
+
+.ticket-main, .ticket-stub {
+    padding: 15px;
+    z-index: 1;
+}
+
+.ticket-main {
+    flex: 4;
+    background-color: #f0f0f0;
+    border-right: 1px dashed #ddd;
+    position: relative;
+    background-image: url("img/Imagen de mundo.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.ticket-stub {
+    flex: 2;
+    background-color: #ffa500;
+    color: white;
+    position: relative;
+}
+
+.ticket-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+
+.company-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #000;
+    text-align: left;
+    margin-left: 350px;
+}
+
+
+.ticket-field {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ticket-label {
+    font-size: 0.8em;
+    color: #666;
+    flex: 1;
+    text-align: center;
+}
+
+.ticket-value {
+    font-weight: bold;
+    font-size: 1.2em;
+    flex: 1;
+    text-align: center;
+}
+
+.orange-line {
+    border: none;
+    height: 2px;
+    background-color: orange;
+    margin: 10px 0;
+}
+
+.back-button {
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.ticket-stub .ticket-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.1px;
+}
+
+.ticket-stub .ticket-label, .ticket-stub .ticket-value {
+    text-align: left;
+    margin: 1.0px 0;
+}
+
+.ticket-stub-header {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-align: center;
+    color: black;
+}
+
+.white-line {
+    border: none;
+    height: 2px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+.message {
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 80px;
+    margin-left: 140px; 
+    margin-right: 0;
+    margin-bottom: 10px;
+}
